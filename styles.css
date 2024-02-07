@@ -1,0 +1,161 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Raleway", sans-serif;
+}
+
+:root {
+  --color-text: #ffffff;
+  --bg-input: linear-gradient(
+    to right top,
+    #030917,
+    #222e36,
+    #425256,
+    #697877,
+    #95a09a
+  );
+  --bg-button: linear-gradient(
+    to right top,
+    #030917,
+    #2d2531,
+    #553f47,
+    #7b5e5a,
+    #99826e
+  );
+}
+
+body {
+  height: 100vh;
+  background-image: url(./assets/img/img2.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+header {
+  width: 100%;
+  background: transparent;
+  box-shadow: #000000 2px 2px 10px 2px;
+  -webkit-box-shadow: 5px 5px 15px 5px #000000;
+  text-align: right;
+  padding: 20px;
+}
+
+main {
+  margin-left: 65px;
+}
+
+.link-header {
+  position: relative;
+  text-decoration: none;
+  color: var(--color-text);
+  font-size: 18px;
+  font-weight: 400;
+  cursor: pointer;
+  padding: 20px;
+  margin-left: 10px;
+}
+
+.link-header::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 3px;
+  bottom: 0;
+  left: 0;
+  background-color: #fff;
+  visibility: hidden;
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s;
+}
+
+.link-header:hover:before {
+  visibility: visible;
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
+}
+
+.link-header:active{
+    opacity: 0.8;
+}
+
+h1 {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  width: 520px;
+  height: 200px;
+  margin-top: 136px;
+
+  color: var(--color-text);
+  font-weight: 300;
+  font-size: 100px;
+  line-height: 150px;
+}
+
+p {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  width: 522px;
+  height: 0px;
+  margin-top: 465px;
+
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 28px;
+  color: var(--color-text);
+}
+
+span {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  width: 314px;
+  height: 24.5px;
+  margin-top: 565px;
+
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 21px;
+  color: var(--color-text);
+}
+
+input {
+  position: absolute;
+  width: 350px;
+  height: 55px;
+  margin-top: 620px;
+  background: var(--bg-input);
+  border-radius: 16px;
+  padding: 15px;
+  border: none;
+  outline: 0;
+  color: var(--color-text);
+}
+
+button {
+  position: absolute;
+  width: 150px;
+  height: 55px;
+  margin-top: 620px;
+  margin-left: 430px;
+  background: var(--bg-button);
+  border-radius: 16px;
+  border: none;
+  cursor: pointer;
+  color: var(--color-text);
+  transition: 0.3s ease;
+}
+
+button:hover{
+    transform: scale(1) translateY(-5px);
+}
+button:active{
+    opacity: 0.8;
+}
+
